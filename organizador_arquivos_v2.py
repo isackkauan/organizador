@@ -16,7 +16,7 @@ for file in os.listdir(downloads_path):
     num = 1
 
     # Para pastas
-    if file_extension == '':
+    if os.path.isdir(file_path):
         folder = f'{arquivos_path}\PASTAS'
         
     # Para arquivos diversos
